@@ -1,5 +1,6 @@
 ﻿using _20231213.Pages;
 using Microsoft.Extensions.Logging;
+using ZXing.Net.Maui;
 
 namespace _20231213
 {
@@ -15,6 +16,7 @@ namespace _20231213
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.UseBarcodeReader();
             builder.Services.AddTransient<MainPage>();
             builder.Services.AddTransient<GraphicsPage>();
 
