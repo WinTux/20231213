@@ -17,11 +17,21 @@ namespace _20231213
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
             builder.UseBarcodeReader();
+            //Lo siguiente no es obligatorio, es para cuando notemos que nunca se gatilla el evento de lectura de codigo (barras/QR)
+            builder.ConfigureMauiHandlers(h => {
+                h.AddHandler(typeof(ZXing.Net.Maui.Controls.CameraBarcodeReaderView),
+                    typeof(CameraBarcodeReaderViewHandler)
+                    );
+                h.AddHandler(typeof(ZXing.Net.Maui.Controls.BarcodeGeneratorView),
+                    typeof(BarcodeGeneratorViewHandler)
+                    );
+            });
             builder.Services.AddTransient<MainPage>();
             builder.Services.AddTransient<GraphicsPage>();
+            builder.Services.AddTransient<ScannerPage>();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
