@@ -9,6 +9,7 @@ namespace _20231213
             InitializeComponent();
             Routing.RegisterRoute(nameof(GraphicsPage), typeof(GraphicsPage));
             Routing.RegisterRoute(nameof(ScannerPage), typeof(ScannerPage));
+            Routing.RegisterRoute(nameof(TrazosPage), typeof(TrazosPage));
         }
     }
 }

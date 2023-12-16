@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_20231213.MainPage"
              >
-    <VerticalStackLayout>
+    <VerticalStackLayout Margin="0,5">
         <Button Text="Ejemplo graficos" Clicked="OnEjemplo1Clic"/>
         <Button Text="Ejemplo Scanner" Clicked="OnEjemplo2Clic"/>
+        <Button Text="Ejemplo trazos" Clicked="OnEjemplo3Clic"/>
     </VerticalStackLayout>
 </ContentPage>

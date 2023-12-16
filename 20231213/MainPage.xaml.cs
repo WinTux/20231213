@@ -18,6 +18,10 @@ namespace _20231213
         {
             await Shell.Current.GoToAsync(nameof(ScannerPage));
         }
+        async void OnEjemplo3Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(TrazosPage));
+        }
     }
 
 }
