@@ -22,6 +22,10 @@ namespace _20231213
         {
             await Shell.Current.GoToAsync(nameof(TrazosPage));
         }
+        async void OnEjemplo4Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(MapaPage));
+        }
     }
 
 }

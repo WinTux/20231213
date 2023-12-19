@@ -7,5 +7,6 @@
         <Button Text="Ejemplo graficos" Clicked="OnEjemplo1Clic"/>
         <Button Text="Ejemplo Scanner" Clicked="OnEjemplo2Clic"/>
         <Button Text="Ejemplo trazos" Clicked="OnEjemplo3Clic"/>
+        <Button Text="Ejemplo mapa" Clicked="OnEjemplo4Clic"/>
     </VerticalStackLayout>
 </ContentPage>
