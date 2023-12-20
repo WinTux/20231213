@@ -6,7 +6,7 @@
              xmlns:mapa="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
              xmlns:ubica="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials">
     <Grid>
-        <mapa:Map x:Name="mimapa" IsShowingUser="True" IsTrafficEnabled="True">
+        <mapa:Map x:Name="mimapa" IsShowingUser="True" IsTrafficEnabled="True" MapClicked="OnMapaClic">
             <!-- <x:Arguments>
                 <MapSpan>
                     <ubica:Location>
@@ -31,6 +31,37 @@
                     </mapa:Pin.Location>
                 </mapa:Pin>
             </mapa:Map.Pins>
+
+            <mapa:Map.MapElements>
+                <mapa:Polygon StrokeColor="Blue" StrokeWidth="7" FillColor="#88ffaa00">
+                    <mapa:Polygon.Geopath>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501528522672412</x:Double>
+                                <x:Double>-68.13290097456239</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50168414737359</x:Double>
+                                <x:Double>-68.1327755848961</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50201944136864</x:Double>
+                                <x:Double>-68.13324927919099</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501856974370956</x:Double>
+                                <x:Double>-68.13339390951721</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Polygon.Geopath>
+                </mapa:Polygon>
+            </mapa:Map.MapElements>
         </mapa:Map>
     </Grid>
 </ContentPage>
