@@ -26,6 +26,10 @@ namespace _20231213
         {
             await Shell.Current.GoToAsync(nameof(MapaPage));
         }
+        async void OnEjemplo5Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(MediaPage));
+        }
     }
 
 }

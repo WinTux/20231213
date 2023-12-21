@@ -11,6 +11,7 @@ namespace _20231213
             Routing.RegisterRoute(nameof(ScannerPage), typeof(ScannerPage));
             Routing.RegisterRoute(nameof(TrazosPage), typeof(TrazosPage));
             Routing.RegisterRoute(nameof(MapaPage), typeof(MapaPage));
+            Routing.RegisterRoute(nameof(MediaPage), typeof(MediaPage));
         }
     }
 }

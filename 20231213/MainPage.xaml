@@ -8,5 +8,6 @@
         <Button Text="Ejemplo Scanner" Clicked="OnEjemplo2Clic"/>
         <Button Text="Ejemplo trazos" Clicked="OnEjemplo3Clic"/>
         <Button Text="Ejemplo mapa" Clicked="OnEjemplo4Clic"/>
+        <Button Text="Ejemplo multimedia" Clicked="OnEjemplo5Clic"/>
     </VerticalStackLayout>
 </ContentPage>

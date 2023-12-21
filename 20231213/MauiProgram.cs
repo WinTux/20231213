@@ -18,7 +18,8 @@ namespace _20231213
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 })
                 .UseMauiCommunityToolkit()
-                .UseMauiMaps();
+                .UseMauiMaps()
+                .UseMauiCommunityToolkitMediaElement();
             builder.UseBarcodeReader();
             //Lo siguiente no es obligatorio, es para cuando notemos que nunca se gatilla el evento de lectura de codigo (barras/QR)
             builder.ConfigureMauiHandlers(h => {
@@ -34,6 +35,7 @@ namespace _20231213
             builder.Services.AddTransient<ScannerPage>();
             builder.Services.AddTransient<TrazosPage>();
             builder.Services.AddTransient<MapaPage>();
+            builder.Services.AddTransient<MediaPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();
