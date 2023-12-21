@@ -18,7 +18,19 @@ public partial class MapaPage : ContentPage
 			Location = new Location(-16.5034187368878, -68.13048092406169)
 		});
 
-		mimapa.MapType = MapType.Satellite;
+		//mimapa.MapType = MapType.Satellite;
+
+		Polyline polyline = new Polyline { 
+			StrokeColor = Colors.Red,
+			StrokeWidth = 12,
+			Geopath =
+			{
+				new Location(-16.50616054455793, -68.13072043571943),
+				new Location(-16.50525839464598, -68.13176321234529),
+				new Location(-16.50616984505056, -68.13240827881617)
+			}
+		};
+		mimapa.MapElements.Add(polyline);
     }
 
 	async void OnMapaClic(object sender, MapClickedEventArgs e)
@@ -38,5 +50,14 @@ public partial class MapaPage : ContentPage
 			}
 		};
 		mimapa.MapElements.Add(recuadro);
+
+		Circle circle = new Circle { 
+			Center = new Location(-16.50420002280675, -68.13115371953872),
+			Radius = new Distance(20),
+			StrokeColor = Color.FromArgb("#88FF0000"),
+			StrokeWidth = 5,
+			FillColor = Color.FromArgb("#88FFC8C8")
+		};
+		mimapa.MapElements.Add(circle);
 	}
 }
