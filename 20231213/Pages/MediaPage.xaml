@@ -7,8 +7,8 @@
     <VerticalStackLayout>
         <toolkit:MediaElement x:Name="video" WidthRequest="450" HeightRequest="350" 
                               Source="embed://ForBiggerBlazes.mp4"
-                              Aspect="AspectFit"/>
-
+                              Aspect="Fill"/>
+        <Button x:Name="btn" Text="Play/Pause" Clicked="OnBotonClic" HorizontalOptions="Center"/>
 
     </VerticalStackLayout>
 </ContentPage>

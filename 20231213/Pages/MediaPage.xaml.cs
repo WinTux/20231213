@@ -6,4 +6,15 @@ public partial class MediaPage : ContentPage
 	{
 		InitializeComponent();
 	}
+	public void OnBotonClic(object sender, EventArgs e)
+	{
+		if(video.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Playing)
+			video.Pause();
+		else
+			video.Play();
+
+		double vol = video.Volume;
+		video.Volume = vol++;
+		
+	}
 }
